@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="format-detection" content="address=no;">
+    <title></title>
+    <link rel="icon" href="data:image/ico;base64,aWNv">
+    <script type="text/javascript">
+        (function (win, doc) {
+            var docEl = doc.documentElement;
+
+            function setRemUnit () {
+                var docWidth = docEl.clientWidth;
+                var rem = docWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                setRemUnit();
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit();
+                }
+            }, false);
+
+            setRemUnit();
+
+            if (win.devicePixelRatio && win.devicePixelRatio >= 2) {
+                var testEl = doc.createElement('div');
+                var fakeBody = doc.createElement('body');
+                testEl.style.border = '0.5px solid transparent';
+                fakeBody.appendChild(testEl);
+                docEl.appendChild(fakeBody);
+                if (testEl.offsetHeight === 1) {
+                    docEl.classList.add('hairlines');
+                }
+                docEl.removeChild(fakeBody);
+            }
+        }) (window, document);
+    </script>
+    <script type="text/javascript" src="//a.58cdn.com.cn/app58/rms/app/js/app_30805.js?cachevers=530"></script>
+</head>
+<body>
+<script  type="text/javascript">
+  var ____json4fe = {
+    cateId: 8,
+    full_path: '1,8'
+  }
+  var pageData = {
+    isLogin: true,
+    cloudUid: '62804682949642',
+    userId: '62804682949642',
+    isWBApp: true,
+  }
+</script>
+<div id="app"><!-- shell --></div>
+</body>
+</html>
